@@ -1,0 +1,39 @@
+{
+  "@timestamp": "2023-06-21T14:49:16.828Z",
+  "@metadata": {
+    "beat": "filebeat",
+    "type": "_doc",
+    "version": "8.8.1"
+  },
+  "message": "2023.06.21 14:49:13.398571 [ 272 ] {} <Trace> MergedBlockOutputStream: filled checksums 202306_57_57_0 (state Temporary)",
+  "input": {
+    "type": "filestream"
+  },
+  "labels": {
+    "application": "foobar"
+  },
+  "tags": [
+    "production",
+    "env2"
+  ],
+  "agent": {
+    "id": "e742104a-5f35-4685-a054-34a1ecf61836",
+    "name": "e66f13c97673",
+    "type": "filebeat",
+    "version": "8.8.1",
+    "ephemeral_id": "81377a64-f212-4980-b316-f0df2206d42f"
+  },
+  "ecs": {
+    "version": "8.0.0"
+  },
+  "host": {
+    "name": "e66f13c97673"
+  },
+  "log": {
+    "offset": 385774,
+    "file": {
+      "path": "/var/log/clickhouse.log"
+    }
+  }
+}
+

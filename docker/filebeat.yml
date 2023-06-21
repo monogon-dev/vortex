@@ -1,0 +1,11 @@
+filebeat.inputs:
+  - type: filestream
+    paths:
+      - /var/log/*.log
+
+output.kafka:
+  hosts: ["kafka:9092"]
+  topic: 'filebeat'
+  required_acks: 1
+  compression: gzip
+  max_message_bytes: 1000000

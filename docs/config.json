@@ -1,0 +1,14 @@
+{
+  "fields": {
+    "@timestamp": ".@timestamp",
+    "message":  ".message",
+    "logfile": ".log.file.path",
+    "hostname": ".host.name",
+    "input": ".input.type",
+    "agent": ".agent.type",
+    "tags": ".tags | join(',')"
+  },
+  "embeds": [
+    ".labels"
+  ]
+}
